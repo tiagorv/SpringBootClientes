@@ -29,7 +29,7 @@ public class Cliente {
     @JsonFormat(pattern = "dd/MM/yyyy")
     private LocalDate dataCadastro;
 
-    @Column(nullable = false, length = 60)
+    @Column(nullable = true, length = 60)
     private String cidade;
 
     @PrePersist
